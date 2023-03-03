@@ -127,6 +127,7 @@ def del_empty_folders(path):
         else:
             continue        
 
+            
 def normalize_all(path):
     items = [x for x in path.iterdir()]
     for item in items:
@@ -145,6 +146,7 @@ def report_category(category:str, files_lst: list):
     print(f'Found files in category {category}: ', len(files_lst))
     for file in files_lst:   
         print(file)  
+
 
 def main():
     work_path = sys.argv[1]
