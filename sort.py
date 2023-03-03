@@ -155,7 +155,7 @@ def main():
     found_known = set(known_types)
     found_unknown = set(unknown_types)
     
-    # create folders only for foubd file types
+    # create folders only for found file types
     
     if music:
         music_report = move_files(music, path, 'music')
