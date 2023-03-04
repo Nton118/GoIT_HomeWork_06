@@ -50,8 +50,7 @@ def scan_folder(path:Path):
         is_unknown = True    
         if item.is_file():
             ext = item.suffix[1:].upper()
-            
-        
+                    
             for name, types in CATEGORIES.items():
                 if ext in types: 
                     found_files[name].append(item)
