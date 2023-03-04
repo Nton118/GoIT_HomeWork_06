@@ -99,7 +99,7 @@ def unpack_files(target_path:Path):
         file.unlink() #delete unpacked archive  
 
 
-def del_empty_folders(path):
+def del_empty_folders(path:Path):
     folders = [x for x in path.iterdir() if x.is_dir()]
     for item in folders:
         if item.name not in CATEGORIES.keys():
@@ -111,7 +111,7 @@ def del_empty_folders(path):
             continue        
 
             
-def normalize_all(path):
+def normalize_all(path:Path):
     items = [x for x in path.iterdir()]
     for item in items:
         if item.is_file():
